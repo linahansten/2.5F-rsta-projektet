@@ -8,7 +8,6 @@ server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
 const userPath = path.resolve("users.json")
-
 function saveUser(user) {
     const users = getUsers()
     users.push(user)
